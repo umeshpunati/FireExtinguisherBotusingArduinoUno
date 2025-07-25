@@ -34,27 +34,6 @@ This project is ideal for academic demonstrations and understanding the fundamen
 
 ---
 
-## 🧱 Block Diagram
-
-+------------------+
-| Flame Sensors |
-| (Left/Center/Right)
-+--------+---------+
-|
-v
-+------------------+ +-----------------+
-| Arduino Uno |<------->| Motor Driver |
-+--------+---------+ +--------+--------+
-| |
-| v
-v +--------------+
-+----------------+ | DC Motors |
-| Extinguisher | +--------------+
-| (Fan/Servo) |
-+----------------+
-        ^
-        |
- Power Supply (Battery)
 
 ---
 
