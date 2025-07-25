@@ -1,63 +1,84 @@
-Fire Extinguisher Robot Using Arduino Uno
-Overview
-The Fire Extinguisher Robot is an autonomous system designed to detect and extinguish small fires using an Arduino Uno. This project leverages flame sensors, motorized movement, and an active suppression mechanism (fan, water, or CO₂ pump) to target fire sources. It is particularly suited for educational use, robotics demonstrations, and small-scale safety simulations.
+# 🔥 Fire Extinguisher Robot using Arduino Uno
 
-Key Features
-Flame detection: Locates fires using multiple flame sensors.
+## 📘 Overview
 
-Directional movement: Navigates toward detected fire sources.
+The Fire Extinguisher Robot is an autonomous system built on Arduino Uno designed to detect and suppress fire in small-scale environments. It uses flame sensors to identify the presence and direction of fire, then navigates toward it and activates a suppression mechanism (fan or water sprayer) to extinguish it.
 
-Automatic suppression: Activates a fan or pump for extinguishing the fire.
+This project is ideal for academic demonstrations and understanding the fundamentals of embedded systems, robotics, and automation.
 
-Status LED: Provides real-time fire detection status.
+---
 
-Autonomous operation: Functions without human intervention after setup.
+## 🔧 Components Used
 
-Components Used
-Component	Quantity
-Arduino Uno	1
-Flame Sensor Module	2–3
-L298N Motor Driver	1
-DC Motors with Wheels	2
-Servo Motor / Pump	1
-Fan / Water Tank (Optional)	1
-12V Battery Pack	1
-Chassis	1
-Jumper Wires	Several
-Breadboard (Optional)	1
-LED (Status Indicator)	1
-Working Principle
-Detection: Flame sensors identify the presence and direction of fire.
+| Component               | Quantity |
+|------------------------|----------|
+| Arduino Uno            | 1        |
+| Flame Sensor Modules   | 2–3      |
+| L298N Motor Driver     | 1        |
+| DC Motors with Wheels  | 2        |
+| Servo Motor / Water Pump | 1      |
+| Fan / Sprayer          | 1        |
+| 12V Battery Pack       | 1        |
+| Robot Chassis          | 1        |
+| Jumper Wires           | Several  |
+| LED (Status Indicator) | 1        |
 
-Navigation: The robot uses its wheels and motor driver to move toward the fire, guided by sensor input.
+---
 
-Extinguishing: Upon approaching the fire, a fan, water sprayer, or pump is activated to suppress the flame.
+## 🔍 How It Works
 
-Feedback: The status LED indicates detection and suppression status.
+1. **Fire Detection**: Flame sensors detect fire and estimate its direction.
+2. **Movement**: The robot moves toward the fire using motor control logic.
+3. **Extinguishing**: When close to the fire, the robot activates a suppression system.
+4. **Feedback**: LEDs or sound buzzers can be used to signal fire detection and suppression.
 
-Instructions: How to Run
-Assemble the hardware on the chassis according to the wiring diagram (not included here; refer to the project documentation).
+---
 
-Connect sensors, motors, and actuators to the Arduino Uno and the motor driver.
+## 🧱 Block Diagram
 
-Upload the Arduino code using the Arduino IDE.
++------------------+
+| Flame Sensors |
+| (Left/Center/Right)
++--------+---------+
+|
+v
++------------------+ +-----------------+
+| Arduino Uno |<------->| Motor Driver |
++--------+---------+ +--------+--------+
+| |
+| v
+v +--------------+
++----------------+ | DC Motors |
+| Extinguisher | +--------------+
+| (Fan/Servo) |
++----------------+
+        ^
+        |
+ Power Supply (Battery)
 
-Power the robot with a 12V battery or via USB.
+---
 
-Test the setup: Place a small, controlled flame such as a candle nearby. Observe the robot as it detects, approaches, and attempts to extinguish the fire.
+## ⚙️ Setup Instructions
 
-Safety Note
-The robot should only be used on small, controlled fires (like candles).
+1. Assemble the robot chassis and mount components securely.
+2. Connect all sensors, motors, and actuators to the Arduino and motor driver.
+3. Upload the control code using Arduino IDE (refer to your implementation).
+4. Power the system with a 12V battery pack.
+5. Place a small controlled fire (e.g., a candle) in front of the robot for testing.
 
-Do not use it for large or hazardous fires.
+---
 
-Always conduct tests in a controlled environment and keep a real fire extinguisher nearby.
+## ⚠️ Safety Guidelines
 
-References
-Arduino Flame Sensor Datasheet
+- Only use in a **controlled** and **safe** environment.
+- Never test with large or hazardous fires.
+- Always keep a **real fire extinguisher** nearby during testing.
 
-L298N Motor Driver Guide
+---
 
-Arduino Uno Official Documentation
+## 👨‍💻 Author
 
-Project by Umesh Chandra Punati (B.Tech IoT with AIML – KL University).
+**Umesh Chandra Punati**  
+B.Tech IoT with AIML – KL University
+
+---
