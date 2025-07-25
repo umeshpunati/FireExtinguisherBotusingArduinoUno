@@ -45,24 +45,27 @@ The robot is ideal for small-scale fire safety demonstrations or academic projec
 
 ---
 
-📦 How to Run
+## 📦 How to Run
 Assemble all components on chassis.
 Connect the sensors, motors, and actuator to Arduino as per the diagram.
 Upload the code using Arduino IDE.
 Power the robot using a 12V battery or USB.
 Place a small fire source (like a candle) and observe the robot detect and extinguish it.
+--
 
-⚠️ Safety Note
+##⚠️ Safety Note
 Do not use near hazardous or large fires.
 Always test in a controlled environment.
 Keep a real fire extinguisher nearby when testing with open flames.
+--
 
-📚 References
+##📚 References
 Arduino Flame Sensor Datasheet
 L298N Motor Driver Guide
 Arduino Uno Official Documentation
+--
 
-🧑‍💻 Author
+##🧑‍💻 Author
 Umesh Chandra Punati
 B.Tech IoT with AIML – KL University
-
+--
